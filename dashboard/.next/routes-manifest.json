@@ -1,0 +1,167 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [
+      {
+        "source": "/api/:path*",
+        "destination": "http://localhost:3000/api/:path*",
+        "regex": "^/api(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"
+      }
+    ],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/analytics",
+      "regex": "^/analytics(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/analytics(?:/)?$"
+    },
+    {
+      "page": "/approvals",
+      "regex": "^/approvals(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/approvals(?:/)?$"
+    },
+    {
+      "page": "/chat",
+      "regex": "^/chat(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/chat(?:/)?$"
+    },
+    {
+      "page": "/coding-brain",
+      "regex": "^/coding\\-brain(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/coding\\-brain(?:/)?$"
+    },
+    {
+      "page": "/conversations",
+      "regex": "^/conversations(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/conversations(?:/)?$"
+    },
+    {
+      "page": "/extensions",
+      "regex": "^/extensions(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/extensions(?:/)?$"
+    },
+    {
+      "page": "/knowledge",
+      "regex": "^/knowledge(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/knowledge(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/memory",
+      "regex": "^/memory(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/memory(?:/)?$"
+    },
+    {
+      "page": "/planner",
+      "regex": "^/planner(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/planner(?:/)?$"
+    },
+    {
+      "page": "/providers",
+      "regex": "^/providers(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/providers(?:/)?$"
+    },
+    {
+      "page": "/research",
+      "regex": "^/research(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/research(?:/)?$"
+    },
+    {
+      "page": "/self-coding",
+      "regex": "^/self\\-coding(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/self\\-coding(?:/)?$"
+    },
+    {
+      "page": "/skills",
+      "regex": "^/skills(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/skills(?:/)?$"
+    },
+    {
+      "page": "/tasks",
+      "regex": "^/tasks(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/tasks(?:/)?$"
+    },
+    {
+      "page": "/tools",
+      "regex": "^/tools(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/tools(?:/)?$"
+    },
+    {
+      "page": "/vscode",
+      "regex": "^/vscode(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/vscode(?:/)?$"
+    },
+    {
+      "page": "/world-model",
+      "regex": "^/world\\-model(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/world\\-model(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

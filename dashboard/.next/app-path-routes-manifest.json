@@ -1,0 +1,22 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/approvals/page": "/approvals",
+  "/analytics/page": "/analytics",
+  "/conversations/page": "/conversations",
+  "/chat/page": "/chat",
+  "/coding-brain/page": "/coding-brain",
+  "/extensions/page": "/extensions",
+  "/planner/page": "/planner",
+  "/page": "/",
+  "/knowledge/page": "/knowledge",
+  "/tasks/page": "/tasks",
+  "/login/page": "/login",
+  "/skills/page": "/skills",
+  "/tools/page": "/tools",
+  "/providers/page": "/providers",
+  "/self-coding/page": "/self-coding",
+  "/world-model/page": "/world-model",
+  "/vscode/page": "/vscode",
+  "/memory/page": "/memory",
+  "/research/page": "/research"
+}
